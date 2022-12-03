@@ -121,12 +121,178 @@
             "234a17c0d4b8365b",
             "bf5c6c9d422aa020",
             "5a9f1df571523f99",
-            "fa476f08ab9df86f"
+            "fa476f08ab9df86f",
+            "ebc8fb06a12c96f7",
+            "26a019e37b92d2bd"
         ],
         "x": 14,
         "y": 19,
         "w": 1212,
         "h": 842
+    },
+    {
+        "id": "dc0984f6.cbae78",
+        "type": "ui_group",
+        "name": "CloudWatcher Weather data",
+        "tab": "91f4bb8c.094048",
+        "order": 1,
+        "disp": true,
+        "width": "14",
+        "collapse": false
+    },
+    {
+        "id": "91f4bb8c.094048",
+        "type": "ui_tab",
+        "name": "My observatory",
+        "icon": "mi-home",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "cd12568506156812",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 84,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "797b08d740cd52fc",
+        "type": "ui_link",
+        "name": "Stock Interface",
+        "link": "https://aagsolo/stock.html",
+        "icon": "mi-show_chart",
+        "target": "thistab",
+        "order": 4
+    },
+    {
+        "id": "6eb37543b9c80559",
+        "type": "ui_link",
+        "name": "Admin",
+        "link": "https://aagsolo/config",
+        "icon": "mi-settings",
+        "target": "thistab",
+        "order": 3
+    },
+    {
+        "id": "d2e9dddd42494b20",
+        "type": "ui_link",
+        "name": "Forecast",
+        "link": "https://www.goodtostargaze.com/",
+        "icon": "wi-darksky-cloudy",
+        "target": "thistab",
+        "order": 2
+    },
+    {
+        "id": "4586cd95bc5e8630",
+        "type": "ui_spacer",
+        "z": "2a8b02ca.5fe626",
+        "name": "spacer",
+        "group": "dc0984f6.cbae78",
+        "order": 8,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "84121dc56042cfe5",
+        "type": "ui_spacer",
+        "z": "2a8b02ca.5fe626",
+        "name": "spacer",
+        "group": "dc0984f6.cbae78",
+        "order": 20,
+        "width": 6,
+        "height": 1
     },
     {
         "id": "229c1832.a883c8",
@@ -791,7 +957,8 @@
                 "234a17c0d4b8365b",
                 "bf5c6c9d422aa020",
                 "5a9f1df571523f99",
-                "fa476f08ab9df86f"
+                "fa476f08ab9df86f",
+                "ebc8fb06a12c96f7"
             ]
         ]
     },
@@ -1752,52 +1919,41 @@
         ]
     },
     {
-        "id": "f891618ac86bb2c0",
-        "type": "ui_spacer",
+        "id": "ebc8fb06a12c96f7",
+        "type": "function",
         "z": "2a8b02ca.5fe626",
-        "name": "spacer",
+        "g": "d763b73b917ec7bc",
+        "name": "format switch",
+        "func": "var data = context.get('data') || false;\n\nif (msg.topic === 'data') {\n    data = msg.payload;\n    context.set('data', data);\n}\n\nif (parseInt(data.switch) === 0) {\n    msg.payload = \"Closed\";\n    msg.color = \"red\";\n} else if (parseInt(data.switch) === 1) {\n    msg.payload = \"Open\";\n    msg.color = \"#EFEFEF\";\n} else {\n    msg.payload = \"Not Used\";\n    msg.color = \"#EFEFEF\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 820,
+        "wires": [
+            [
+                "26a019e37b92d2bd"
+            ]
+        ]
+    },
+    {
+        "id": "26a019e37b92d2bd",
+        "type": "ui_text",
+        "z": "2a8b02ca.5fe626",
+        "g": "d763b73b917ec7bc",
         "group": "dc0984f6.cbae78",
         "order": 5,
         "width": 1,
-        "height": 1
-    },
-    {
-        "id": "cfa4dd989ccfe613",
-        "type": "ui_spacer",
-        "z": "2a8b02ca.5fe626",
-        "name": "spacer",
-        "group": "dc0984f6.cbae78",
-        "order": 8,
-        "width": 6,
-        "height": 1
-    },
-    {
-        "id": "ecc0eb7c823e8774",
-        "type": "ui_spacer",
-        "z": "2a8b02ca.5fe626",
-        "name": "spacer",
-        "group": "dc0984f6.cbae78",
-        "order": 20,
-        "width": 6,
-        "height": 1
-    },
-    {
-        "id": "dc0984f6.cbae78",
-        "type": "ui_group",
-        "name": "CloudWatcher Weather data",
-        "tab": "91f4bb8c.094048",
-        "order": 1,
-        "disp": true,
-        "width": "14",
-        "collapse": false
-    },
-    {
-        "id": "91f4bb8c.094048",
-        "type": "ui_tab",
-        "name": "My observatory",
-        "icon": "mi-home",
-        "order": 1,
-        "disabled": false,
-        "hidden": false
+        "height": 1,
+        "name": "Switch",
+        "label": "",
+        "format": "<font color={{msg.color}} size=\"+2\">{{msg.payload}}</font>",
+        "layout": "col-center",
+        "className": "",
+        "x": 710,
+        "y": 820,
+        "wires": []
     }
 ]
